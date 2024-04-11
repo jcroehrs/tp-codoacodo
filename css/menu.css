@@ -1,0 +1,26 @@
+body {
+    background-color: #ECF3FF;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #8fd58b94;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.cuerpo {
+    padding: 20px;
+}
