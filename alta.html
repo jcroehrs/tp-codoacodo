@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- documento en idioma español -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- el viewport toma el ancho del dispositivo y escala 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- título para el tab del browser -->
+    <title>alta</title>
+    <!-- relación tipo stylesheet con archivo CSS excterno -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- aplica la clase definida en archvo externo CSS --> 
+    <div class="container">
+        <!-- formulario de acceso -->
+        <form action="datos.html" method="post">
+          <p style="text-align: center;"><b>Alta de usuario</b></p>
+          <!-- cartelito para usuario -->
+          <label for="usuario">Usuario</label><br>
+          <!-- campo para usuario -->
+          <input size="30" type="text" name="nombre" placeholder="Usuario"><br><br>
+          <!-- cartelito para clave -->
+          <label for="clave">Clave</label><br>
+          <!-- campo para clave -->
+          <input size="30" type="password" name="clave" placeholder="Clave"><br><br>
+          <!-- botón de reseteo -->
+          <button type="reset">Borrar todo</button>
+          <!-- botón de alta -->
+          <input type="submit" value="Darse de alta">
+          <!-- botón de alta -->
+          <a href="login.html">
+            <input type="button" value="Volver" />
+          </a>
+        </form>
+    </div>
+  </body>
+
+</html>

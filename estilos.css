@@ -1,0 +1,22 @@
+html {
+  /* tipografía palo seco sin serif */
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* contenedor para formulario */
+.container {
+  display: flex;
+  background-color: gray;
+  /* centrado en horizontal */
+  justify-content: center;
+  /* centrado en vertical */
+  align-items: center;
+  /* altura en porcentaje del viewport height (vh) */
+  height: 100vh;
+  min-height: 200px;
+}
+/* formulario */
+form {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
