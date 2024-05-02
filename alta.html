@@ -9,14 +9,16 @@
     <!-- título para el tab del browser -->
     <title>alta</title>
     <!-- relación tipo stylesheet con archivo CSS excterno -->
-    <link rel="stylesheet" href="css/cortes.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <!-- aplica la clase definida en archvo externo CSS --> 
     <div class="container">
         <!-- formulario de acceso -->
-        <form action="datos.html" method="post">
+        <!-- método get o vacío para datos visibles -->
+        <!-- método post para datos ocultos -->
+        <form action="datos.html" method="get">
           <p style="text-align: center;"><b>Alta de usuario</b></p>
           <!-- cartelito para usuario -->
           <label for="usuario">Usuario</label><br>
@@ -31,8 +33,8 @@
           <!-- botón de alta -->
           <input type="submit" value="Darse de alta">
           <!-- botón de alta -->
-          <a href="login.html">
-            <input type="button" value="Volver" />
+          <a href="index.html">
+            <input type="button" value="Inicio" />
           </a>
         </form>
     </div>
