@@ -20,3 +20,20 @@ form {
   padding: 10px;
   border-radius: 10px;
 }
+
+footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  padding: 20px 0; /* Espaciado interno del footer */
+  text-align: center; /* Alinea el texto al centro */
+  position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+  left: 0; /* Se coloca a la izquierda */
+  bottom: 0; /* Se coloca en la parte inferior */
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el contenedor del footer */
+.container {
+  max-width: 960px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
