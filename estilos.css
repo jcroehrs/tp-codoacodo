@@ -21,6 +21,18 @@ form {
   border-radius: 10px;
 }
 
+body.sobre-nosotros {
+  background-color: #c7ecee; /* Celeste claro */
+}
+
+/* Estilos para el contenido del cuerpo específico */
+body.sobre-nosotros p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333; /* Color de texto oscuro */
+  margin: 20px; /* Margen alrededor del párrafo */
+}
+
 footer {
   background-color: #333; /* Color de fondo del footer */
   color: #fff; /* Color del texto del footer */
