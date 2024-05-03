@@ -1,0 +1,17 @@
+/* aplica propiedades a clase imágenes */
+
+img{
+    width: 200px;
+    /* rotación duración 1 seg */
+    animation: rotation 1s infinite linear;
+  }
+  
+  /* define keyframes de rotacion */
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }

@@ -9,15 +9,17 @@
     <!-- título para el tab del browser -->
     <title>login</title>
     <!-- relación tipo stylesheet con archivo CSS excterno -->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <!-- aplica la clase definida en archvo externo CSS --> 
     <div class="container">
         <!-- formulario de acceso -->
+        <!-- método get o vacío para datos visibles -->
+        <!-- método post para datos ocultos -->
         <form action="datos.html" method="">
-          <p style="text-align: center;"><b>Bienvenido</b></p>
+          <p style="text-align: center;"><b>Login</b></p>
           <!-- cartelito para usuario -->
           <label for="usuario">Usuario</label><br>
           <!-- campo para usuario -->
@@ -34,6 +36,9 @@
           </a>
           <!-- botón de ingreso -->
           <input type="submit" value="Ingresar">
+          <a href="index.html">
+            <input type="button" value="Inicio" />
+          </a>
         </form>
     </div>
   </body>
