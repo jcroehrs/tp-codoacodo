@@ -36,7 +36,7 @@ body.sobre-nosotros p {
 footer {
   background-color: blue; /* Color de fondo del footer */
   color: #fff; /* Color del texto del footer */
-  padding: 20px 0; /* Espaciado interno del footer */
+  padding: 5px 0; /* Espaciado interno del footer */
   text-align: center; /* Alinea el texto al centro */
   position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
   left: 0; /* Se coloca a la izquierda */
@@ -48,4 +48,22 @@ footer {
 .container {
   max-width: 960px; /* Ancho máximo del contenedor */
   margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.container-footer {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.p-footer {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
