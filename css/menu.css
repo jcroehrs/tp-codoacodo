@@ -6,18 +6,25 @@
 body {
     background-color: #ECF3FF;
 }
+header {
+    background-color: blue;
+    /* En esta parte alineamos con el logo conlos elementos del menu */
+    display: flex; 
+    align-items: center; 
+}
 
 nav {
-    padding: 25px;
+    padding: 4px;
     background-color: blue;
-    jus
+    flex-grow: 1;
+    
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #8fd58b94;
+    background-color: #318273;
     overflow: hidden;
 }
 
@@ -33,5 +40,5 @@ nav li a {
 }
 
 .cuerpo {
-    padding: 20px;
+    padding: 40px;
 }

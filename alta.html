@@ -3,6 +3,7 @@
 <html lang="es">
 
 <head>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <!-- el viewport toma el ancho del dispositivo y escala 1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,26 @@
     <title>alta</title>
     <!-- relación tipo stylesheet con archivo CSS excterno -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/rotacion.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
+  <header>
+    <img src="img/flechas_486x500.png">
+        <!-- navegador -->
+    <nav>
+        <ul>
+           <li><a href="#inicio">Inicio</a></li>
+           <li><a href="rotacion.html">Galeria</a></li>
+           <li><a href="#nosotros">Nosotros</a></li>
+           <li><a href="#contacto">Contacto</a></li>
+           <li><a href="login.html">Login</a></li>
+           <li><a href="alta.html">Registro</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
     <!-- aplica la clase definida en archvo externo CSS --> 
     <div class="container">
         <!-- formulario de acceso -->
@@ -33,11 +51,17 @@
           <!-- botón de alta -->
           <input type="submit" value="Darse de alta">
           <!-- botón de alta -->
-          <a href="index.html">
-            <input type="button" value="Inicio" />
-          </a>
+
         </form>
     </div>
-  </body>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Trueque@r. Todos los derechos reservados.</p>
+      <p>Dirección: Balcarce 50, Ciudad autónoma de Buenos Aires</p>
+    </div>
+  </footer>  
+</body>
 
 </html>
