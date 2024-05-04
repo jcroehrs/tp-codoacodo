@@ -1,6 +1,6 @@
 /* aplica propiedades a clase imágenes */
 
-img{
+.logo{
     width: 45px;
     /* rotación duración 1 seg */
     animation: rotation 1s infinite linear;
