@@ -42,3 +42,25 @@ nav li a {
 .cuerpo {
     padding: 40px;
 }
+
+.articontainer {
+    display: flex;
+    justify-content: center;
+    background-color:lightcyan;
+}
+
+.articulo {
+    /* display: flex; */
+    text-align: center;
+    width: 250px;
+    background-color: lightgray;
+    justify-content: center;
+    margin: 10px;
+    font-size: large;
+    /* font-weight: bold; */
+    transition: box-shadow 0.3s ease; 
+}
+
+.articulo:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
+}
