@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   /* tipografía palo seco sin serif */
  font-family: Arial, Helvetica, sans-serif;
@@ -66,4 +71,106 @@ footer {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
+}
+
+/* aplica propiedades a clase imágenes */
+
+.logo{
+  width: 45px;
+  /* rotación duración 1 seg */
+  animation: rotation 1s infinite linear;
+}
+
+/* define keyframes de rotacion */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/*menu*/
+body {
+  background-color: #ECF3FF;
+}
+header {
+  background-color: blue;
+  /* En esta parte alineamos con el logo conlos elementos del menu */
+  display: flex; 
+  align-items: center; 
+}
+
+nav {
+  padding: 4px;
+  background-color: blue;
+  flex-grow: 1;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #318273;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: rgb(19, 18, 18);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.cuerpo {
+  padding: 40px;
+}
+
+.articontainer {
+  display: flex;
+  justify-content: center;
+  background-color:lightcyan;
+}
+
+.articulo {
+  /* display: flex; */
+  text-align: center;
+  width: 250px;
+  background-color: lightgray;
+  justify-content: center;
+  margin: 10px;
+  font-size: large;
+  /* font-weight: bold; */
+  transition: box-shadow 0.3s ease; 
+}
+
+.articulo:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
+}
+
+/* Carrusel */
+.carousel-indicators .active {
+  background-color: red; /* Cambia el color de fondo del indicador activo */
+}
+.carousel-indicators li {
+  background-color: blue; /* Cambia el color de fondo de los indicadores inactivos */
+}
+
+/*mapa*/
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.iframe-container iframe {
+  width: 612px; /* Ancho del iframe ajustable */
+  height: 336px; /* Altura del iframe ajustable */
 }
