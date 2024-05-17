@@ -101,8 +101,8 @@ header a:hover{
 }
 
 .cuerpoGral .container h3{
-    margin-top: 0;
-    padding-bottom: 0;
+    margin-top: 10;
+    padding-bottom: 10px;
     color: #EEE2DE;
 }
 
@@ -110,29 +110,45 @@ footer{
     background-color: #EEE2DE;
 }
 
-footer p{
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    color: #2B2A4C;
+    font-weight: bold;
+}
+
+    footer p{
     margin: 0;
     padding: 12px;
 }
-
-footer .container{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
 footer .container .color-acento{
         font-weight: bold;
         color: #B31312;
 }
 
+footer .container section ul{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container section ul #wasap{
+    width: 67px;
+    height: 50px;
+    background-color: #0049C4;
+    border-radius: 20px;
+}
+
 /* primer corte */
-@media only screen and (min-width: 768px){
+
+    @media only screen and (min-width: 768px){
+    
     header{
-        position: fixed;
-        width: 100%;
-    }
+    position: fixed;
+    width: 100%;
+}
 
     header .marca{
     margin: 0;
@@ -167,11 +183,24 @@ footer .container .color-acento{
     }
 
     footer .container{
-        justify-content: flex-end;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2B2A4C;
 }
 
+footer .container section ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+}
 /* segundo corte */
+
 @media only screen and (min-width: 1024px){
 
     header .marca{
@@ -206,20 +235,20 @@ header nav a{
     height: 50vh;
 }
 
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2B2A4C;
 }
 
+footer .container section ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

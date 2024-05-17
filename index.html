@@ -6,27 +6,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Trueque@r</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- STYLES.CSS original cambiada a CONTACTO_TRUEQUE.CSS en este HTML-->
+    <link rel="stylesheet" href="contacto_trueque.css">
+
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
     
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body>
     <body>
         <header>
-          <img src="img/flechas_486x500.png" class="logo">
-              <!-- navegador -->
-          <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="alta.html">Registro</a></li>
-             </ul>
-          </nav>
-      </header>
+          <div class="container">
+            <img class="logo" src="flechas_486x500.png" height="60px" alt="logo">
+            <h1 class="marca">Trueque@r</h1>
+        
+            <nav>
+              <a href="#">Inicio</a>
+              <a href="#">Galería</a>
+              <a href="#">Nosotros</a>
+              <a href="#">Contacto</a>
+              <a href="#">Registro</a>
+              <a href="#"><img class="login" src="login3.png" width="30px" height="30px" alt="loginete"></a>
+            </nav>
+          </div>
+        </header>
 
 
 <main>
@@ -92,13 +100,29 @@
 </main>
 
 <footer>
-    <div class="container-footer">
-        <p class="p-footer">&copy; 2024 Trueque@r. Todos los derechos reservados.</p>
-        <p class="p-footer">Dirección: Balcarce 50, Ciudad autónoma de Buenos Aires</p>
-    </div>
+  <div class="container">
+    <p>&copy; <span class="color-acento">Trueque@r</span> 2024</p>
+    <p>Todos los derechos reservados</p>
+    <p>Balcarce 50 CABA - Argentina</p>
+    <section>
+      <ul>
+
+        <a href="#"><img class="fc" src="../img/redes/fc.png" height="70"></a>
+        <a href="#"><img class="ig" src="../img/redes/ig.png" height="70"></a>
+        <a href="#"><img src="../img/redes/x.png" height="70"></a>
+
+        <a href="#"><img src="../img/redes/yt.png" height="70"></a>
+        <button id="wasap"><a href="#"><img src="../img/redes/ws.png" height="50"></a></button>
+
+
+      </ul>
+
+    </section>
+  </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 </html>
