@@ -25,6 +25,16 @@ header{
 
 header .logo{
     margin: 0;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 header .marca{
@@ -58,6 +68,7 @@ header nav a{
 
 header a:hover{
     color:#B31312;
+    text-decoration: none;
 }
 
 .login{
@@ -67,6 +78,7 @@ header a:hover{
 .cuerpoGral{
     background-color: #2B2A4C;
     text-align: center;
+    padding: 10px;
 }
 
 .cuerpoGral .container{
@@ -84,7 +96,7 @@ header a:hover{
 }
 
 .cuerpoGral .container .cuerpo p{
-    /* display: none; */
+
     display: flex;
     color: #B31312;
     font-weight: bold;
@@ -130,16 +142,12 @@ footer .container .color-acento{
 
 footer .container section ul{
     text-decoration: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer .container section ul #wasap{
-    width: 67px;
-    height: 50px;
-    background-color: #0049C4;
-    border-radius: 20px;
-}
+
 
 /* primer corte */
 

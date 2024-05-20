@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 3.1em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header{
+    background-color: #EEE2DE;
+}
+
+header .logo{
+    margin: 0;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 4em;
+    color: #B31312;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+header a:hover{
+    color:#B31312;
+}
+
+.login{
+    margin: 0 auto;
+}
+
+.nosotros{
+    background-color: #2B2A4C;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nosotros .containerNos{
+    padding: 250px 12px;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 0px;
+    margin-bottom: 10px;
+    background-color: #EA906C;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,1);
+}
+
+.nosotros .containerNos h2{
+    margin-top: 0;
+    padding-bottom: 50px;
+    color: #EEE2DE;
+}
+
+.nosotros .containerNos p{
+    display: flex;
+    color: #B31312;
+    font-weight: bold;
+}
+
+.nosotros .iframe-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: #EEE2DE;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    color: #2B2A4C;
+    font-weight: bold;
+}
+
+    footer p{
+    margin: 0;
+    padding: 12px;
+}
+footer .container .color-acento{
+        font-weight: bold;
+        color: #B31312;
+}
+
+footer .container section ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* primer corte */
+
+    @media only screen and (min-width: 768px){
+    
+    header{
+    position: fixed;
+    width: 100%;
+}
+
+    header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 3em;
+    color: #B31312;
+}
+    header nav a{
+    padding: 5px 9px;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .nosotros{
+        
+    background-color: #2B2A4C;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+    .nosotros .containerNos{
+        margin-top: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+footer .container section ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+}
+
+
+/* segundo corte */
+
+@media only screen and (min-width: 1024px){
+
+    header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #B31312;
+}
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+.nosotros{
+    width: auto;
+}
+
+.nosotros .containerNos{
+    padding: 0 100px;
+    display: flex;
+    flex: 1;
+    width: 1240px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.nosotros .iframe-container{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+footer .container section ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+}
