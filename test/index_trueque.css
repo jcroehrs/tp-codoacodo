@@ -84,13 +84,27 @@ header a:hover{
     padding: 50px;
 }
 
+.containerDibu{
+    padding: 300px 18px;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 10px;
+    background-color: #EA906C;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,1);
+    padding-bottom: 50px;
+}
+
 .inde .containerInde{
-    padding: 250px 12px;
+    padding: 200px 12px;
+    height: 400px;
     background-position: center center;
     background-size: cover;
     padding: 50px;
     margin: 0px;
-    background-color: #EA906C;
+    background-color: white;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,1);
     padding-bottom: 50px;
@@ -99,14 +113,11 @@ header a:hover{
 .inde .containerInde h2{
     margin-top: 0;
     padding-bottom: 50px;
-    color: #EEE2DE;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #B31312;
 }
 
-.inde .containerInde p{
-    display: flex;
-    color: #B31312;
-    font-weight: bold;
-}
 
 /* main Galería */
 
@@ -232,7 +243,7 @@ footer .container section ul{
 }
 
 
-/* primer corte */
+/* PRIMER CORTE ---------------------------------------------------------------------- */
 
     @media only screen and (min-width: 768px){
     
@@ -270,34 +281,44 @@ footer .container section ul{
         
     }
 
-    .inde{
-        
+.inde{
     background-color: #2B2A4C;
     text-align: center;
-    
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     
 }
 
-    .inde .containerInde{
-        margin-top: 100px;
+.containerDibu{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 900px;
+    
+}
+
+.inde .containerInde{
+        margin-top: 50px;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        height: 700px;
     }
 
-    .inde .containerInde h2{
+.inde .containerInde h2{
     padding-top: 20px;
-    font-size: 4.0em;
+    font-size: 3.0em;
     }
 
-    .inde .containerInde img{
+.inde .containerInde img{
+    
     width: 80%;
     height: auto;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 /* main Galería */
@@ -352,7 +373,7 @@ footer .container section ul{
 
 }
 
-/* segundo corte */
+/* SEGUNDO CORTE ----------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1024px){
 
@@ -376,6 +397,15 @@ header nav a{
     width: auto;
 }
 
+.containerDibu{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 900px;
+    
+}
+
 .inde .containerInde{
     padding: 0 100px;
     display: flex;
@@ -385,17 +415,17 @@ header nav a{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 180vh;
+    height: 700px;
 }
 
 .inde .containerInde h2{
     padding-top: 20px;
-    font-size: 5.5em;
+    font-size: 4.5em;
 }
 
 
 .inde .containerInde img{
-    width: 100%;
+    width: 50%;
     height: auto;
     justify-content: center;
     align-items: center;
