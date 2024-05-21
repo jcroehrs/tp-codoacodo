@@ -248,7 +248,7 @@ footer .container section ul{
     @media only screen and (min-width: 768px){
     
     header{
-    position: fixed;
+    /*position: fixed; Hace que se solape con el menu*/
     width: 100%;
     
     
