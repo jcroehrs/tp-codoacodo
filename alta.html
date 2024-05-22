@@ -38,23 +38,30 @@
 
                 <div class="cuerpo">
                     <div class="card">
-                        <h3>Alta de usuario</h3>
+                        <h3>Alta de usuario</h3><br>
         
         <form action="datos.html" method="get">
 
-          <!-- cartelito para usuario -->
-          <label for="usuario">Usuario</label><br>
-          <!-- campo para usuario -->
-          <input size="30" type="text" name="nombre" placeholder="Usuario"><br><br>
-          <!-- cartelito para clave -->
-          <label for="clave">Clave</label><br>
-          <!-- campo para clave -->
-          <input size="30" type="password" name="clave" placeholder="Clave"><br><br>
-          <!-- botón de reseteo -->
-          <button type="reset">Borrar todo</button>
+          <!-- nombre y apellido-->
+          <label class="campolabel" for="nombreapellido">Nombre y apellido</label><br>
+          <input class="campo" size="30" type="text" name="nombreapellido" placeholder="Nombre y apellido"><br><br>
+
+          <!-- e-mail -->
+          <label class="campolabel" for="email">e-mail</label><br>
+          <input class="campo" size="30" type="text" name="email" placeholder="e-mail"><br><br>
+                  
+          <!-- usuario -->
+          <label class="campolabel" for="usuario">Usuario</label><br>
+          <input class="campo" size="30" type="text" name="usuario" placeholder="Usuario"><br><br>
+          
+          <!-- clave -->
+          <label class="campolabel" for="clave">Clave</label><br>
+          <input class="campo" size="30" type="password" name="clave" placeholder="Clave"><br><br>
+          
+          <!-- botón de reset -->
+          <button class="boton" type="reset">Borrar todo</button>
           <!-- botón de alta -->
-          <input type="submit" value="Darse de alta">
-          <!-- botón de alta -->
+          <input class="boton" type="submit" value="Darse de alta">
 
         </form>
       </div>

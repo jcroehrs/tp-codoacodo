@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loguin</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -38,33 +38,29 @@
 
                 <div class="cuerpo">
                     <div class="card">
-                        <h3>Login</h3>
+                        <h3>Login</h3><br>
         <form action="datos.html" method="">
           
-          <!-- cartelito para usuario -->
-          <label for="usuario">Usuario</label><br>
-          <!-- campo para usuario -->
-          <input size="30" type="text" name="nombre" placeholder="Usuario"><br><br>
-          <!-- cartelito para clave -->
-          <label for="clave">Clave</label><br>
-          <!-- campo para clave -->
-          <input size="30" type="password" name="clave" placeholder="Clave"><br><br>
-          <!-- botón de reseteo -->
-          <button type="reset">Borrar todo</button>
+          <!-- usuario -->
+          <label class="campolabel" for="usuario">Usuario</label><br>
+          <input class="campo" size="30" type="text" name="usuario" placeholder="Usuario"><br><br>
+          
+          <!-- clave -->
+          <label class="campolabel" for="clave">Clave</label><br>
+          <input class="campo" size="30" type="password" name="clave" placeholder="Clave"><br><br>
+          
+          <!-- botón de reset -->
+          <button class="boton" type="reset">Borrar todo</button>
           <!-- botón de alta -->
           <a href="alta.html">
-            <input type="button" value="Darse de alta" />
-          </a>
+              <input class="boton" type="button" value="Darse de alta"></a>
           <!-- botón de ingreso -->
-          <input type="submit" value="Ingresar">
+          <input class="boton" type="submit" value="Ingresar">
 
         </form>
-      </div>
-                   
-
-    </div>
-
-</div>
+                    </div>
+                </div>
+            </div>
 </section>
 </main>
 
