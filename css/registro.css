@@ -19,6 +19,29 @@ p{font-size: 1.25em;}
     margin: auto;
 }
 
+.campolabel {
+    color: #b31312;
+    text-align: start;
+    font-weight: bold;
+}
+.campo {
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.boton {
+    background-color: #eee2de;
+    padding: 6px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #b31312;
+}
+
 header{
     background-color: #EEE2DE;
 }
