@@ -36,7 +36,9 @@
         <section class="cuerpoGral">
             <div class="container">
                 <h2>Podés comunicarte con nosotros</h2>
-                <div class="cuerpo">
+                <div class="form-image-container">
+
+            
                     <div class="card">
                         <h3>Bienvenido!</h3>
                         <form action="#" method="post">
@@ -45,26 +47,44 @@
                                 <input type="text" class="form-control" id="nombre" name="nombre">
                             </div>
                             <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label><br>
+                                <input type="text" class="form-control" id="apellido" name="apellido">
+                            </div>
+                            <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label><br>
                                 <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="mb-3">
-                                <label for="telefono" class="form-label">Numero de Telefono</label><br>
+                                <label for="telefono" class="form-label">Número de Teléfono</label><br>
                                 <input type="text" class="form-control" id="telefono" name="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Género</label><br>
+                                <input type="radio" id="hombre" name="genero" value="hombre">
+                                <label for="hombre">Hombre</label>
+                                <input type="radio" id="mujer" name="genero" value="mujer">
+                                <label for="mujer">Mujer</label>
                             </div>
                             <div class="mb-3">
                                 <label for="mensaje" class="form-label">Mensaje</label><br>
                                 <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
                             </div>
-                    </div>
-                   
+                            <div class="mb-3">
+                                <button type="submit" class="btn">Enviar</button>
 
+                    </div>
+                </form>
+                
                 </div>
-                <h3>Abajo tenés tenes nuestras redes sociales para contactarte con nosotros</h3>
+                <div class="image">
+                    <img src="img/sobre_reciclar.png" alt="Imagen del formulario">
+                </div>
             </div>
         </section>
-    </main>
-
+        <!--<h3>Abajo tenés tenes nuestras redes sociales para contactarte con nosotros</h3> -->
+        </main>
+        <!--</div> -->
+        <h3>Abajo tenés tenes nuestras redes sociales para contactarte con nosotros</h3>
     <footer>
         <div class="container">
             <p>&copy; <span class="color-acento">Trueque@r</span> 2024</p>
