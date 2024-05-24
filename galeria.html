@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Galeria</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- STYLES.CSS original cambiada a CONTACTO_TRUEQUE.CSS en este HTML-->
-    <link rel="stylesheet" href="css/galeria.css">
-  
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
-  
-  
-  </head>
-  
-  <body>
-  
-    <body>
-      <header>
-        <div class="container">
-          <img class="logo" src="img/flechas_486x500.png" height="60px" alt="logo">
-          <h1 class="marca">Trueque@r</h1>
-  
-          <nav>
-            <a href="index.html">Inicio</a>
-            <a href="galeria.html">Galería</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="alta.html">Registro</a>
-            <a href="login.html"><img class="login" src="img/login3.png" width="30px" height="30px" alt="loginete"></a>
-          </nav>
-            </div>
-        </header>
+  <title>Galeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/galeria.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 
-<main>
-  <section class="cuerpoGral">
+</head>
+
+<body>
+  <header>
     <div class="container">
+      <img class="logo" src="img/flechas_486x500.png" alt="logo">
+      <h1 class="marca">Trueque@r</h1>
 
-        <div class="cuerpo">
-            <div class="card">
-              <a href="index.html"><img src="img/art_250x250_libro.jpg" width="250" height="250"></a></br>
-              <p><b>Libro "La vida de las abejas", Autor: Mauricio Maeterlinck</b></p><br>
-              <p>Villa del Parque</p>
-            </div>
-            <div class="card">
-              <a href="index.html"><img src="img/art_250x250_martillo.jpg" width="250" height="250"></a><br>
-              <p><b>Martillo de acero con incrustaciones de mercurio, ideal para clavos rebeldes y tornillos gastados</b></p><br>
-              <p>La Boca</p>
-            </div>
-            <div class="card">
-              <a href="index.html"><img src="img/art_250x250_guante.jpg" width="250" height="250"></a><br>
-              <p><b>Guante de jardinería (izquierdo)</b></p><br>
-              <p>Belgrano</p>
-            </div>
-        </div>
-
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Galería</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="#">Registro</a>
+        <a href="#"><img class="login" src="img/login3.png" alt="loginete"></a>
+      </nav>
     </div>
-</section>
-  
-</main>
+  </header>
 
-<footer>
+
+  <main>
+    <section>
+      <div class="contenedor_galeria">
+        <article>
+          <div><img class="dibu1" src="img/art_250x250_libro.png" alt="libro"></div>
+          <p>
+            Libro: "La vida de las abejas". <br>Autor: Mauricio Maeterlinck. <br> CABALLITO
+          </p>
+        </article>
+        <article>
+          <div><img class="dibu2" src="img/art_250x250_martillo.png" alt="martillo"></div>
+          <p>
+            Martillo de acero con incrustaciones de mercurio. <br> ALMAGRO
+          </p>
+        </article>
+        <article>
+          <div><img class="dibu3" src="img/art_250x250_guante.png" alt="guante"></div>
+          <p>
+            Guante izquierdo de jardinería. <br> BOEDO
+          </p>
+        </article>
+        <article>
+          <div><img class="dibu4" src="img/art_250x250_medias.png" alt="medias"></div>
+          <p>
+            Medias para niños fosforescentes. Ideal camping. <br> CABALLITO
+          </p>
+        </article>
+        <article>
+          <div><img class="dibu5" src="img/art_250x250_munieca.png" alt="munieca"></div>
+          <p>
+            Muñeca importada de Marruecos que ríe a carcajadas. <br> ONCE
+          </p>
+        </article>
+        <article>
+          <div><img class="dibu6" src="img/art_250x250_taza.png" alt="taza"></div>
+          <p>
+            Fina taza de porcelana. Soporta freezer. <br> SAN CRISTÓBAL
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
       <p>&copy; <span class="color-acento">Trueque@r</span> 2024</p>
       <p>Todos los derechos reservados</p>
@@ -86,7 +97,12 @@
 
       </section>
     </div>
-  </footer> 
-   
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
