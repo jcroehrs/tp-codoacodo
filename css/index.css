@@ -86,7 +86,7 @@ header a:hover{
 
 .containerDibu{
     padding: 300px 18px;
-    height: 500px;
+    height: 600px; */tamaño cuadro blanco*/
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -99,7 +99,7 @@ header a:hover{
 
 .inde .containerInde{
     padding: 200px 12px;
-    height: 400px;
+    height: 500px; */tamaño cuadro blanco*/
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -118,12 +118,6 @@ header a:hover{
     color: #B31312;
 }
 
-
-/* main Galería */
-
-/* falta colocar aquí */
-
-/* main Nosotros */
 
 .nosotros{
     background-color: #2B2A4C;
@@ -207,6 +201,15 @@ header a:hover{
     color: #EEE2DE;
 }
 
+.inde .containerInde img{
+    
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
 /* main Registro */
 /* Falta. Colocar aquí */
 
@@ -245,10 +248,9 @@ footer .container section ul{
 
 /* PRIMER CORTE ---------------------------------------------------------------------- */
 
-    @media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
     
     header{
-    /*position: fixed; Hace que se solape con el menu*/
     width: 100%;
     
     
@@ -312,19 +314,16 @@ footer .container section ul{
     font-size: 3.0em;
     }
 
-.inde .containerInde img{
+    .inde .containerInde img{
     
-    width: 80%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
 
-/* main Galería */
-/* Falta */
 
-/* main Nosotros */
 .nosotros{
     background-color: #2B2A4C;
     text-align: center;
@@ -348,9 +347,7 @@ footer .container section ul{
         flex-flow: row wrap;
         justify-content: center;
         
-    }
-
-/* main Registro */
+    }/* main Registro */
 /* Falta */
 /* main Login */
 /* Falta */
@@ -398,7 +395,7 @@ header nav a{
 }
 
 .containerDibu{
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -425,7 +422,7 @@ header nav a{
 
 
 .inde .containerInde img{
-    width: 50%;
+    width: 90%;
     height: auto;
     justify-content: center;
     align-items: center;
