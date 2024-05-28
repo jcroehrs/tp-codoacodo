@@ -86,7 +86,7 @@ header a:hover{
 
 .containerDibu{
     padding: 300px 18px;
-    height: 600px; */tamaño cuadro blanco*/
+    height: 80%; */tamaño cuadro blanco*/
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -99,7 +99,7 @@ header a:hover{
 
 .inde .containerInde{
     padding: 200px 12px;
-    height: 500px; */tamaño cuadro blanco*/
+    height: 80%; */tamaño cuadro blanco*/
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -297,7 +297,7 @@ footer .container section ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 900px;
+    height: 90%;
     
 }
 
@@ -306,7 +306,7 @@ footer .container section ul{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        height: 700px;
+        height: 90%;
     }
 
 .inde .containerInde h2{
@@ -399,7 +399,7 @@ header nav a{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 900px;
+    height: 80%;
     
 }
 
@@ -412,7 +412,7 @@ header nav a{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 700px;
+    height: 80%;
 }
 
 .inde .containerInde h2{
