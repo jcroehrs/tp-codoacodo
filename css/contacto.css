@@ -42,6 +42,11 @@ p{font-size: 1.25em;}
     color: #b31312;
 }
 
+.imagen {
+    width: 50%;
+    height: auto;
+}
+
 header{
     background-color: #EEE2DE;
 }
@@ -99,7 +104,7 @@ header a:hover{
 }
 
 .cuerpoGral{
-    background-color: #EA906C;
+    background-color: #2B2A4C;
     text-align: center;
     padding: 10px;
 }
@@ -356,7 +361,6 @@ header nav a{
     flex-direction: column;
     text-align: center;
     flex-direction: column;
-    /* antes 50vh*/
     height: 500px;
 }
 .iframe-container iframe {
