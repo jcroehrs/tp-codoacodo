@@ -14,6 +14,14 @@ h2{font-size: 3.1em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
 
+h3:nth-child(2) {
+    color: #EEE2DE;
+}
+
+h3:nth-child(4) {
+    color: #EEE2DE;
+}
+
 .container{
     max-width: 1100px;
     margin: auto;
@@ -93,6 +101,7 @@ header a:hover{
 
 .cuerpoGral .container .cuerpo h3{
     color: #2B2A4C;
+
 }
 
 .cuerpoGral .container .cuerpo p{
