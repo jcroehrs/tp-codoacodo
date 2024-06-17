@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 3.1em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header{
+    background-color: #EEE2DE;
+}
+
+header .logo{
+    margin: 0;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 4em;
+    color: #B31312;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    text-decoration: none;
+}
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+header a:hover{
+    color:#B31312;
+    text-decoration: none;
+}
+
+.login{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+footer{
+    background-color: #EEE2DE;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    color: #2B2A4C;
+    font-weight: bold;
+}
+
+    footer p{
+    margin: 0;
+    padding: 12px;
+}
+footer .container .color-acento{
+        font-weight: bold;
+        color: #B31312;
+}
+
+footer .container section ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* PRIMER CORTE ---------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px){
+    
+    header{
+    width: 100%;
+    
+    
+}
+
+    header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 3em;
+    color: #B31312;
+}
+    header nav a{
+    padding: 5px 9px;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+        
+    }
+
+
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+footer .container section ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+}
+
+/* SEGUNDO CORTE ----------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1024px){
+
+    header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #B31312;
+}
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+
+
+
+
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2B2A4C;
+}
+
+footer .container section ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+}
