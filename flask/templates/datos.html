@@ -3,27 +3,18 @@
 
 <head>
   <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Datos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../static/css/datos.css">
-
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-
-
 </head>
 
-
-
-  <body>
-    <header>
-      <div class="container">
+<body>
+  <header>
+    <div class="container">
         <img class="logo" src="../../img/flechas_486x500.png" height="60px" alt="logo">
         <h1 class="marca">Trueque@r</h1>
 
@@ -35,40 +26,61 @@
           <a href="../../alta.html">Registro</a>
           <a href="../../login.html"><img class="login" src="../../img/login3.png" width="30px" height="30px" alt="loginete"></a>
         </nav>
-      </div>
-    </header>
+    </div>
+  </header>
 
 
-    <main>
-
-    
-    </main>
-
-    <footer>
+  <main>
+    <section class="cuerpoGral">
       <div class="container">
-        <p>&copy; <span class="color-acento">Trueque@r</span> 2024</p>
-        <p>Todos los derechos reservados</p>
-        <p>Balcarce 50 CABA - Argentina</p>
-        <section>
-          <ul>
+          <h2>Subí tus productos!</h2>
+          <div class="cuerpo">
+              <div class="card">
+                  <form action="#" method="post">
 
-            <a href="#"><img class="fc" src="../../img/redes/fcA.png" height="70"></a>
-            <a href="#"><img class="ig" src="../../img/redes/igA.png" height="70"></a>
-            <a href="#"><img class="x" src="../../img/redes/xA.png" height="70"></a>
+                      <label class="campolabel" for="producto">Producto</label><br>
+                      <input class="campo" type="text" id="producto" name="producto"
+                          placeholder="Escribí acá qué producto es"><br>
 
-            <a href="#"><img class="yt" src="../../img/redes/ytA.png" height="70"></a>
-            <a href="#"><img class="ws" src="../../img/redes/wsA.png" height="50"></a>
+                      <label class="campolabel" for="descripción">Descripción</label><br>
+                      <textarea class="campo" name="descripción" rows="10" cols="40" id="descripción"
+                          name="descripción"
+                          placeholder="Escribí acá una breve descripción de tu producto"></textarea><br>
 
+                      <label class="campolabel" for="foto">Foto</label><br>
+                      <textarea class="campo" id="foto" name="foto"
+                          placeholder="Subí acá una foto de tu producto"></textarea><br>
+                      <article class="contenBoton">
+                          <button class="boton" type="submit">Guardar</button>
+                          <button class="boton" type="submit">Cancelar</button><br>
+                      </article>
+                  </form>
 
-          </ul>
+              </div>
+  </section> 
+  </main>
 
-        </section>
-      </div>
-    </footer>
+  <footer>
+    <div class="container">
+    <p>&copy; <span class="color-acento">Trueque@r</span> 2024</p>
+    <p>Todos los derechos reservados</p>
+    <p>Balcarce 50 CABA - Argentina</p>
+    <section>
+      <ul>
+        <a href="#"><img class="fc" src="../../img/redes/fcA.png" height="70"></a>
+        <a href="#"><img class="ig" src="../../img/redes/igA.png" height="70"></a>
+        <a href="#"><img class="x" src="../../img/redes/xA.png" height="70"></a>
+        <a href="#"><img class="yt" src="../../img/redes/ytA.png" height="70"></a>
+        <a href="#"><img class="ws" src="../../img/redes/wsA.png" height="50"></a>
+      </ul>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+    </section>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
 </html>
