@@ -1,6 +1,5 @@
 import os
 import psycopg2 # type: ignore
-from flask import g
 from dotenv import load_dotenv # type: ignore
 
 # Cargar variables de entorno desde el archivo .env
