@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datos</title>
@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="container">
-        <img class="logo" src="../../img/flechas_486x500.png" height="60px" alt="logo">
+        <img class="logo" src="../static/img/flechas_486x500.png" height="60px" alt="logo">
         <h1 class="marca">Trueque@r</h1>
 
         <nav>
@@ -24,7 +24,7 @@
           <a href="../../nosotros.html">Nosotros</a>
           <a href="../../contacto.html">Contacto</a>
           <a href="../../alta.html">Registro</a>
-          <a href="../../login.html"><img class="login" src="../../img/login3.png" width="30px" height="30px" alt="loginete"></a>
+          <a href="../../login.html"><img class="login" src="../static/img/login3.png" width="30px" height="30px" alt="loginete"></a>
         </nav>
     </div>
   </header>
@@ -36,28 +36,42 @@
           <h2>Subí tus productos!</h2>
           <div class="cuerpo">
               <div class="card">
-                  <form action="#" method="post">
+                  <form id="articulosForm" action="../static/img/">
 
-                      <label class="campolabel" for="producto">Producto</label><br>
+                      <label 
+                        class="campolabel" 
+                        for="producto">Producto
+                      </label><br>
                       <input class="campo" type="text" id="producto" name="producto"
                           placeholder="Escribí acá qué producto es"><br>
 
-                      <label class="campolabel" for="descripción">Descripción</label><br>
+                      <label 
+                        class="campolabel" 
+                        for="descripción">Descripción
+                      </label><br>
+                      
                       <textarea class="campo" name="descripción" rows="10" cols="40" id="descripción"
                           name="descripción"
                           placeholder="Escribí acá una breve descripción de tu producto"></textarea><br>
 
                       <label class="campolabel" for="foto">Foto</label><br>
-                      <textarea class="campo" id="foto" name="foto"
+                      <input type="file" id="foto" name="foto"
                           placeholder="Subí acá una foto de tu producto"></textarea><br>
                       <article class="contenBoton">
                           <button class="boton" type="submit">Guardar</button>
-                          <button class="boton" type="submit">Cancelar</button><br>
+                       
                       </article>
                   </form>
 
+                  
+
               </div>
+              
   </section> 
+  <section>
+    <div id="listaArticulos" class="contenedor_galeria"> </div>
+  
+  
   </main>
 
   <footer>
@@ -67,11 +81,11 @@
     <p>Balcarce 50 CABA - Argentina</p>
     <section>
       <ul>
-        <a href="#"><img class="fc" src="../../img/redes/fcA.png" height="70"></a>
-        <a href="#"><img class="ig" src="../../img/redes/igA.png" height="70"></a>
-        <a href="#"><img class="x" src="../../img/redes/xA.png" height="70"></a>
-        <a href="#"><img class="yt" src="../../img/redes/ytA.png" height="70"></a>
-        <a href="#"><img class="ws" src="../../img/redes/wsA.png" height="50"></a>
+        <a href="#"><img class="fc" src="../static/img/redes/fcA.png" height="70"></a>
+        <a href="#"><img class="ig" src="../static/img/redes/igA.png" height="70"></a>
+        <a href="#"><img class="x" src="../static/img/redes/xA.png" height="70"></a>
+        <a href="#"><img class="yt" src="../static/img/redes/ytA.png" height="70"></a>
+        <a href="#"><img class="ws" src="../static/img/redes/wsA.png" height="50"></a>
       </ul>
 
     </section>
@@ -81,6 +95,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../static/js/main.js"></script>
 </body>
 
 </html>
