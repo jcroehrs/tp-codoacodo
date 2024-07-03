@@ -1,5 +1,5 @@
 const articulosForm = document.querySelector('#articulosForm')
-let articulos = []
+let articulos = [];
 
 window.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch ("/api/articulos");
@@ -9,16 +9,16 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-articulosForm.addEventListener('submit', async e => {
+articulosForm.addEventListener("submit", async e => {
     e.preventDefault()
-    const titulo = articulosForm['producto'].value
-    const descripcion = articulosForm['descripción'].value
-    const imagen = articulosForm['foto'].value
+    const titulo = articulosForm["producto"].value
+    const descripcion = articulosForm["descripción"].value
+    const imagen = articulosForm["foto"].value
     const activo = true
     console.log(titulo, descripcion, imagen)
 
-const response = await fetch('/api/articulos', {
-    method: 'POST',
+const response = await fetch("/api/articulos", {
+    method: "POST",
     headers: {
         "Content-Type": "application/json"
     },
@@ -31,8 +31,11 @@ const response = await fetch('/api/articulos', {
 })
 const producto = await response.json()
 
+articulos.unshift(producto)
+mostrarArticulos(articulos)
 console.log(producto)
 articulosForm.reset();
+
     
 })
 
