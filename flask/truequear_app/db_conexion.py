@@ -64,7 +64,7 @@ def ver_articulo(id):
 def borrar_articulo(id):
     conn = psycopg2.connect(**DATABASE_CONFIG)
     cur = conn.cursor(cursor_factory=extras.RealDictCursor)
-    cur.execute('DELETE FROM trueque WHERE id=%s RETURNING *', (id))
+    cur.execute('DELETE FROM trueque WHERE id=%s RETURNING *', (id,))
     art_eliminado = cur.fetchone()
     if art_eliminado is None:
         return jsonify({'message': 'Articulos no encontrado'}), 404

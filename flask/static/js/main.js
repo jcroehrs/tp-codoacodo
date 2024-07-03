@@ -57,10 +57,22 @@ function mostrarArticulos(articulos){
         
         <p>${articulo.imagen}</p>
         <div>
-            <button data-id="${articulo.id}" class="btn-delete btn btn-danger btn-sm">Delete</button>
-            <button data-id="${articulo.id}" class="btn-edit btn btn-secondary btn-sm">Edit</button>
+            <button class="btn-borrar">Borrar</button>
+            <button class="btn-editar">Editar</button>
         </div>
         `;
+        const btnBorrar = arti.querySelector(".btn-borrar");
+
+        btnBorrar.addEventListener("click", async (e) => {
+          const response = await fetch(`/api/articulos/${articulo.id}`, {
+            method: "DELETE"
+          });
+    
+          const data = await response.json();
+    
+          articulos = articulos.filter((articulo) => articulo.id !== data.id);
+          mostrarArticulos(articulos);
+        });
         listaArticulos.append(arti)
     })
 }
