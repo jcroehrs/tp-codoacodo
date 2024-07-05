@@ -157,6 +157,45 @@ footer .container{
     margin: 0;
     padding: 12px;
 }
+main section .contenedor_galeria {
+    padding: 15px;
+    padding-left: 25px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 87%;
+}
+
+main section .contenedor_galeria article {
+    padding: 25px 40px;
+    background-color: #EA906C;
+    width: calc(100% - 50px);
+    max-width: 350px;
+    height: 60vh;
+    text-align: center;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+main section .contenedor_galeria article p {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B31312;
+}
+
 footer .container .color-acento{
         font-weight: bold;
         color: #B31312;
@@ -183,7 +222,10 @@ footer .container section ul{
     height: 350px;
 }
 
-
+main section .contenedor_galeria article .dibu1 {
+    width: 70%;
+    height: auto;
+}
 /* PRIMER CORTE ---------------------------------------------------------------------- */
 
 @media only screen and (min-width: 768px){
@@ -240,7 +282,15 @@ footer .container section ul{
         height: 400px;
     }
 
+ main section .contenedor_galeria article {
+        height: 60vh;
+    }
 
+    main section .contenedor_galeria article {
+        width: calc(51% - 50px);
+        max-width: 400px;
+        margin: 25px 15px;
+}
 
 footer .container{
     display: flex;
@@ -262,6 +312,15 @@ footer .container section ul{
     height: auto;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+main section .contenedor_galeria article {
+    height: 60vh;
+}
+
+main section .contenedor_galeria article {
+    width: calc(51% - 50px);
+    max-width: 400px;
+    margin: 25px 15px;
 }
 }
 /* SEGUNDO CORTE ----------------------------------------------------------------------- */
@@ -319,13 +378,21 @@ footer .container section ul{
     flex-direction: row;
     text-align: center;
     padding-bottom: 25px;
+}    
+.form-image-container .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+main section .contenedor_galeria article {
+    height: 60vh;
 }
 
+main section .contenedor_galeria article {
+    width: calc(85% - 50px);
+    max-width: 400px;
+    margin: 25px 15px;
 }
-.iframe-container iframe {
-    max-width: 700px;
-    height: 500px;
-}.iframe-container iframe {
-    max-width: 700px;
-    height: 500px;
+
 }
