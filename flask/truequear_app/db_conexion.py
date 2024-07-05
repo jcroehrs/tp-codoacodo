@@ -49,9 +49,10 @@ def ver_articulos():
 
 
 def ver_articulo(id):
+  
     conn = psycopg2.connect(**DATABASE_CONFIG)
     cur = conn.cursor(cursor_factory=extras.RealDictCursor)
-    cur.execute('SELECT * FROM trueque WHERE id= %s', (id))
+    cur.execute('SELECT * FROM trueque WHERE id= %s', (id,))
     articulo = cur.fetchone()
     if articulo is None:
         return jsonify({'message': 'Articulos no encontrado'}), 404

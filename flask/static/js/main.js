@@ -1,5 +1,7 @@
 const articulosForm = document.querySelector('#articulosForm')
 let articulos = [];
+let editar = false;
+let idarticulo = null;
 
 window.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch ("/api/articulos");
@@ -17,10 +19,11 @@ articulosForm.addEventListener("submit", async e => {
     const activo = true
     console.log(titulo, descripcion, imagen)
 
-const response = await fetch("/api/articulos", {
+if(!editar){
+  const response = await fetch("/api/articulos", {
     method: "POST",
     headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
     },
     body: JSON.stringify({
         titulo,
@@ -28,12 +31,30 @@ const response = await fetch("/api/articulos", {
         imagen,
         activo
     })
-})
+});
+
 const producto = await response.json()
 
 articulos.unshift(producto)
+}else{
+  console.log("editando...")
+  const response = await fetch(`/api/articulos/${idarticulo}`, {
+    method  : "PUT",
+    headers: {
+      "Content-Type": "application/json",
+  },
+    body: JSON.stringify({
+      titulo,
+      descripcion,
+      imagen,
+      activo,
+    }),
+  });
+  const articuloEditado = await response.json();
+  articulos = articulos.map((articulo) => articulo.id === articuloEditado.id ? articuloEditado : articulo);
+}
 mostrarArticulos(articulos)
-console.log(producto)
+
 articulosForm.reset();
 
     
@@ -73,6 +94,17 @@ function mostrarArticulos(articulos){
           articulos = articulos.filter((articulo) => articulo.id !== data.id);
           mostrarArticulos(articulos);
         });
+        const btnEditar = arti.querySelector(".btn-editar")
+        btnEditar.addEventListener("click", async (e) =>{
+          const response = await fetch(`/api/articulos/${articulo.id}`);
+          const data = await response.json();
+          articulosForm["producto"].value = data.titulo;
+          articulosForm["descripción"].value = data.descripcion;
+          editar = true;
+          idarticulo = articulo.id;
+          
+          
+        });
         listaArticulos.append(arti)
-    })
+    });
 }
