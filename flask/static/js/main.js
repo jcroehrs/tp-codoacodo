@@ -65,9 +65,9 @@ function mostrarArticulos(articulos){
     const listaArticulos = document.querySelector('#listaArticulos')
     listaArticulos.innerHTML = ""
     articulos.forEach((articulo) => {
-        const arti = document.createElement("li");
+        const arti = document.createElement("article");
         arti.innerHTML = `
-        <article>
+        
         <h3>${articulo.titulo}</h3>
           <div><img class="dibu1" src="../static/img/art_250x250_libro1.png" alt="libro"></div>
           <p>

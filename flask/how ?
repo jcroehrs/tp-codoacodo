@@ -1,0 +1,158 @@
+General
+  \bind [PARAM]...
+                  definir parámetros de consulta
+  \copyright      mostrar términos de uso y distribución de PostgreSQL
+  \crosstabview [COLUMNAS]
+                  ejecutar la consulta y desplegar en «crosstab»
+  \errverbose     mostrar error más reciente en máxima verbosidad
+  \g [(OPTIONS)] [FILE]
+                  ejecuta la consulta (y envía el resultado a un fichero o |pipe);
+                  \g sin argumentos es equivalente a un punto y coma
+  \gdesc          describir resultado de la consulta, sin ejecutarla
+  \gexec          ejecutar la consulta, luego ejecuta cada valor del resultado
+  \gset [PREFIJO] ejecutar la consulta y almacenar el resultado en variables
+                  de psql
+  \gx [(OPTIONS)] [FILE]
+                  como \g, pero fuerza el modo de salida expandido
+  \q              salir de psql
+  \watch [[i=]SEG] [c=N] ejecute consulta cada SEG segundos, hasta N veces
+
+Ayuda
+  \? [commands]   desplegar ayuda sobre las órdenes backslash
+  \? options      desplegar ayuda sobre opciones de línea de órdenes
+  \? variables    desplegar ayuda sobre variables especiales
+  \h [NOMBRE]     mostrar ayuda de sintaxis de órdenes SQL;
+                  use «*» para todas las órdenes
+
+Búfer de consulta
+  \e [ARCHIVO] [LÍNEA]
+                  editar el búfer de consulta (o archivo) con editor externo
+  \ef [NOMBRE-FUNCIÓN [LÍNEA]]
+                  editar una función con editor externo
+  \ev [NOMBRE-VISTA [LÍNEA]]
+                  editar definición de una vista con editor externo
+  \p              mostrar el contenido del búfer de consulta
+  \r              reiniciar (limpiar) el búfer de consulta
+  \s [ARCHIVO]    mostrar historial de órdenes o guardarlo en archivo
+  \w ARCHIVO      escribir búfer de consulta a archivo
+
+Entrada/Salida
+        (con -n, donde existe, se omite el salto de línea final)
+  \copy ...            ejecutar orden SQL COPY con flujo de datos al cliente
+  \echo [-n] [STRING]  escribe la cadena en la salida estándar
+  \i ARCHIVO           ejecutar órdenes desde archivo
+  \ir ARCHIVO          como \i, pero relativo a la ubicación del script actual
+  \o [ARCHIVO]         enviar resultados de consultas a archivo u |orden
+  \qecho [-n] [STRING] escribe la cadena hacia flujo de salida \o
+  \warn [-n] [STRING]  escribe la cadena a la salida de error estándar
+
+Condicional
+  \if EXPRESIÓN   inicia bloque condicional
+  \elif EXPR      alternativa dentro del bloque condicional actual
+  \else           alternativa final dentro del bloque condicional actual
+  \endif          termina el bloque condicional
+
+Informativo
+   (opciones: S = desplegar objetos de sistema, + = agregar más detalle)
+  \d[S+]            listar tablas, vistas y secuencias
+  \d[S+]  NOMBRE    describir tabla, índice, secuencia o vista
+  \da[S]  [PATRÓN]  listar funciones de agregación
+  \dA[+]  [PATRÓN]  listar métodos de acceso
+  \dAc[+] [AMPTRN [TYPEPTRN]]  listar las clases de operadores
+  \dAf[+] [AMPTRN [TYPEPTRN]]  listar las familias de operadores
+  \dAo[+] [AMPTRN [OPFPTRN]]   listar los operadores de la familia de operadores
+  \dAp[+] [AMPTRN [OPFPTRN]]   enumera las funciones de la familia de operadores
+  \db[+]  [PATRÓN]  listar tablespaces
+  \dc[S+] [PATRÓN]  listar conversiones
+  \dconfig[+] [PATRÓN]  listar parámetros de configuración
+  \dC[+]  [PATRÓN]  listar conversiones de tipo (casts)
+  \dd[S]  [PATRÓN]  listar comentarios de objetos que no aparecen en otra parte
+  \dD[S+] [PATRÓN]  listar dominios
+  \ddp    [PATRÓN]  listar privilegios por omisión
+  \dE[S+] [PATRÓN]  listar tablas foráneas
+  \des[+] [PATRÓN]  listar servidores foráneos
+  \det[+] [PATRÓN]  listar tablas foráneas
+  \deu[+] [PATRÓN]  listar mapeos de usuario
+  \dew[+] [PATRÓN]  listar conectores de datos externos
+  \df[anptw][S+] [FUNCPTRN [TYPEPTRN ...]]
+                    listar funciones [sólo ag./normal/proc./trigger/ventana]
+  \dF[+]  [PATRÓN]  listar configuraciones de búsqueda en texto
+  \dFd[+] [PATRÓN]  listar diccionarios de búsqueda en texto
+  \dFp[+] [PATRÓN]  listar analizadores (parsers) de búsq. en texto
+  \dFt[+] [PATRÓN]  listar plantillas de búsqueda en texto
+  \dg[S+] [PATRÓN]  listar roles
+  \di[S+] [PATRÓN]  listar índices
+  \dl[+]            listar objetos grandes, lo mismo que \lo_list
+  \dL[S+] [PATRÓN]  listar lenguajes procedurales
+  \dm[S+] [PATRÓN]  listar vistas materializadas
+  \dn[S+] [PATRÓN]  listar esquemas
+  \do[S+] [OPPTRN [TYPEPTRN [TYPEPTRN]]]
+                    listar operadores
+  \dO[S]  [PATRÓN]  listar ordenamientos (collations)
+  \dp[S]  [PATRÓN]  listar privilegios de acceso a tablas, vistas y secuencias
+  \dP[tin+] [PATRÓN] listar relaciones particionadas (sólo tablas/índices) [n=anidadas]
+  \drds [PATRÓN_ROL [PATRÓN_BASE]]
+                    listar parámetros de rol por base de datos
+  \drg[S] [PATRÓN]  listar roles
+  \dRp[+] [PATRÓN]  listar publicaciones de replicación
+  \dRs[+] [PATRÓN]  listar suscripciones de replicación
+  \ds[S+] [PATRÓN]  listar secuencias
+  \dt[S+] [PATRÓN]  listar tablas
+  \dT[S+] [PATRÓN]  listar tipos de dato
+  \du[S+] [PATRÓN]  listar roles
+  \dv[S+] [PATRÓN]  listar vistas
+  \dx[+]  [PATRÓN]  listar extensiones
+  \dX     [PATRÓN]  listar estadísticas extendidas
+  \dy[+]  [PATRÓN]  listar disparadores por eventos
+  \l[+]   [PATRÓN]  listar bases de datos
+  \sf[+]  FUNCIÓN   mostrar la definición de una función
+  \sv[+]  VISTA     mostrar la definición de una vista
+  \z[S]   [PATRÓN]  lo mismo que \dp
+
+Objetos Grandes
+  \lo_export LOBOID ARCHIVO escribir objeto grande a archivo
+  \lo_import ARCHIVO [COMENTARIO]
+                    leer objeto grande desde archivo
+  \lo_list[+]       listar objetos grandes
+  \lo_unlink LOBOID borrar un objeto grande
+
+Formato
+  \a              cambiar entre modo de salida alineado y sin alinear
+  \C [CADENA]     definir título de tabla, o indefinir si es vacío
+  \f [CADENA]     mostrar o definir separador de campos para
+                  modo de salida sin alinear
+  \H              cambiar modo de salida HTML (actualmente desactivado)
+  \pset [NOMBRE [VALOR]]  define opción de tabla de salida
+                  (border|columns|csv_fieldsep|expanded|fieldsep|fieldsep_zero|
+                   footer|format|linestyle|null|numericlocale|pager|
+                   pager_min_lines|recordsep|recordsep_zero|tableattr|title|
+                   tuples_only|unicode_border_linestyle|unicode_column_linestyle|
+                   unicode_header_linestyle)
+  \t [on|off]      mostrar sólo filas (actualmente desactivado)
+  \T [CADENA]      definir atributos HTML de <table>, o indefinir si es vacío
+  \x [on|off|auto] cambiar modo expandido (actualmente desactivado)
+
+Conexiones
+  \c[onnect] [BASE-DE-DATOS|- USUARIO|- ANFITRIÓN|- PUERTO|- | conninfo]
+                  conectar a una nueva base de datos (actual: «truequiar»)
+  \conninfo       despliega la información sobre la conexión actual
+  \encoding [CODIFICACIÓN]
+                  mostrar o definir codificación del cliente
+  \password [USUARIO]
+                  cambiar la contraseña para un usuario en forma segura
+
+Sistema Operativo
+  \cd [DIR]        cambiar el directorio de trabajo actual
+  \getenv PSQLVAR ENVVAR obtener variable de ambiente
+  \setenv NOMBRE [VALOR]
+                   definir o indefinir variable de ambiente
+  \timing [on|off] mostrar tiempo de ejecución de órdenes
+                   (actualmente desactivado)
+  \! [ORDEN]       ejecutar orden en intérprete de órdenes (shell),
+                   o iniciar intérprete interactivo
+
+Variables
+  \prompt [TEXTO] NOMBRE  preguntar al usuario el valor de la variable
+  \set [NOMBRE [VALOR]]   definir variables internas,
+                          listar todas si no se dan parámetros
+  \unset NOMBRE           indefinir (eliminar) variable interna
