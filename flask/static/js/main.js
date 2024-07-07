@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 articulosForm.addEventListener("submit", async e => {
     e.preventDefault()
     const titulo = articulosForm["producto"].value
-    const descripcion = articulosForm["descripción"].value
+    const descripcion = articulosForm["descripcion"].value
     const imagen = articulosForm["foto"].value
     const activo = true
     console.log(titulo, descripcion, imagen)
@@ -69,14 +69,14 @@ function mostrarArticulos(articulos){
         arti.innerHTML = `
         
         <h3>${articulo.titulo}</h3>
-          <div><img class="dibu1" src="../static/img/art_250x250_libro1.png" alt="libro"></div>
+          <div><img class="dibu1" src="${articulo.imagen}" </div>
           <p>
-            ${articulo.descripcion} <br>Autor: Mauricio Maeterlinck. <br> CABALLITO
+            Descripción: ${articulo.descripcion} <br>Autor: Mauricio Maeterlinck. <br> CABALLITO
           </p>
         </article>
         
         
-        <p>${articulo.imagen}</p>
+        
         <div>
             <button class="btn-borrar">Borrar</button>
             <button class="btn-editar">Editar</button>
@@ -99,7 +99,8 @@ function mostrarArticulos(articulos){
           const response = await fetch(`/api/articulos/${articulo.id}`);
           const data = await response.json();
           articulosForm["producto"].value = data.titulo;
-          articulosForm["descripción"].value = data.descripcion;
+          articulosForm["descripcion"].value = data.descripcion;
+          articulosForm["foto"].value = data.imagen;
           editar = true;
           idarticulo = articulo.id;
           

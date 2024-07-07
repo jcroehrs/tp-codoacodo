@@ -47,16 +47,20 @@
 
                       <label 
                         class="campolabel" 
-                        for="descripción">Descripción
+                        for="descripcion">Descripción
                       </label><br>
                       
-                      <textarea class="campo" name="descripción" rows="10" cols="40" id="descripción"
-                          name="descripción"
+                      <textarea class="campo" name="descripcion" rows="10" cols="40" id="descripcion"
                           placeholder="Escribí acá una breve descripción de tu producto"></textarea><br>
 
                       <label class="campolabel" for="foto">Foto</label><br>
-                      <input type="file" id="foto" name="foto"
-                          placeholder="Subí acá una foto de tu producto"></textarea><br>
+                      <select class="campo" id="foto" name="foto">
+                          <option value="../static/img/art_250x250_medias.png">medias.jpg</option>
+                          <option value="../static/img/art_250x250_guante.png">guante.jpg</option>
+                          <option value="../static/img/art_250x250_libro.png">libro.jpg</option>
+                          <option value="../static/img/art_250x250_martillo.png">martillo.jpg</option>
+                          <option value="../static/img/art_250x250_taza.png">taza.jpg</option>
+                      </select><br>
                       <article class="contenBoton">
                           <button class="boton" type="submit">Guardar</button>
                        
